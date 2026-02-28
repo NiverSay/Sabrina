@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Segredo</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body onload="iniciarCoracoes()">
+
+<h1>Tem certeza que quer ver isso?</h1>
+
+<button class="btn" onclick="ativar()">Sim</button>
+
+<div id="conteudo" style="display:none;">
+<div class="card">
+<p>
+Eu n estou aqui por carencia, estou aqui pq é você.
+Eu n tenho pressa de te apressar<br>
+Ocê n me atrapalha, vc me faz querer ser melhor.
+Te amo muito, muito, muito :>
+</p>
+</div>
+</div>
+
+<div id="conteudo2" style="display:none;">
+<div class="card">
+<p>
+Tudo em vc me acalma e ao msm tempo me incendeia 😏<br>
+Eu nunca imaginei que alguem pudesse significar tanto<br>
+<br>
+Até meus silêncios falam seu nome<br>
+Meu lugar favorito sempre vai ser ao seu lado<br>
+O melhor de mim sempre vai ser seu 💗
+</p>
+</div>
+</div>
+
+<a href="index.html" class="btn">Voltar</a>
+
+<script src="script.js"></script>
+
+<script>
+function ativar() {
+    document.body.classList.add("romantic");
+    document.getElementById("conteudo").style.display = "block";
+    document.getElementById("conteudo2").style.display = "block";
+}
+</script>
+
+</body>
+
+</html>
